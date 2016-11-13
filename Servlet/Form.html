@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+</head>
+<body>
+
+	<form action="xmlServletpath" method="post">
+		<fieldset>
+			<label for="username" >User Name:</label>
+			<input name="userName"><br>
+			<label for="userid" >User ID:</label>
+			<input name="userId"><br>
+			<label>Profession:</label><br>
+            <input type="radio" name="profession" value="MD">MD<br>
+            <input type="radio" name="profession" value="MD">LPN<br>
+            <input type="radio" name="profession" value="MD">RN<br>
+			<label>Number of hours worked:</label><br>
+            <select name="hoursWorked">
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+            </select><br>
+            <label>Availability:</label><br>
+            <input type="checkbox" name="availability" value="Saturday">Saturday<br>
+            <input type="checkbox" name="availability" value="Sunday">Sunday<br>
+            <input type="checkbox" name="availability" value="Holidays">Holidays<br>
+            <input type="checkbox" name="availability" value="Days off">Days off<br>
+            <input type="submit" class="button" value="Submit Form">
+		</fieldset>
+	</form>
+
+</body>
+</html>
