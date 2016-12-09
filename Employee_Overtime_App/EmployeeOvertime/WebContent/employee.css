@@ -1,0 +1,319 @@
+@CHARSET "ISO-8859-1";
+tml * {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  background: #1F1616;
+}
+
+main{
+    width:62.50em;
+    padding:1.25em 0em 0em 1.25em;
+	}
+h1{
+    color:#FFF8F8;
+    font-size:3em;
+    font-family:Impact, Charcoal, sans-serif;
+}
+h2, h3, h4{
+	color:#C90300;
+	font-family:"Times New Roman", Times, serif;
+}
+h3.white{
+	color:#fff8f8;
+	}
+p{
+	color:#FFF8F8;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.12em;
+	line-height:120%;
+}
+
+section{
+        color:#FFF8F8;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.12em;
+	line-height:120%;
+}
+
+ul {
+  list-style: none;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* Form Styles */
+table {
+    border: 1px solid #fff8f8;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+td, th {
+    border: 1px dashed #fff8f8;
+    padding: .2em .5em .2em .5em;
+    text-align: center;
+}
+#table_t {
+    color: #FFF8F8;
+    font-size:0.90em;
+}
+
+#table_g {
+    color: #FFF8F8;
+    font-size:1.12em;
+}
+
+#logo  a {
+    font-size:1.5em;
+    color:#C90300;
+    line-height:0;
+    text-decoration: none;
+	}
+
+label,
+input,
+textarea {
+display: block;
+}
+
+textarea {
+height: 120px;
+border: 3px solid #cccccc;
+width: 250px;
+font-size: 18px;
+padding: 5px 5px;
+}
+
+#mydropdown {
+width: 250px;
+font-size: 18px;
+padding: 5px 2.5px;
+}
+
+/*Menu Styling*/
+nav ul ul {
+	display: none;
+	background: #534F4F;
+	border-radius: 0px;
+	padding: 0;
+	position: absolute;
+	top: 100%;
+	list-style-type: none;
+	}
+nav ul li:hover > ul {
+	display: block;
+	}
+nav ul {
+	background: #534F4F;
+	padding: 0 20px;
+	border-radius:10px;
+	position: relative;
+	display: inline-table;
+	list-style-type: none;
+	}
+nav ul:after {
+	content: "";
+	clear: both;
+	display: block;
+	}
+nav ul li {
+	float: left;
+	border-bottom: 4px solid #C90300;
+	}
+nav ul li:hover > a {
+	background:  #C90300;
+        text-decoration: underline;
+	}
+nav ul li a.active {
+         background: #c90300   
+        }
+nav ul li a {
+	display: block;
+	padding: 10px 40px;
+	color: #FFF8F8;
+        font-family: Arial;
+	font-size:16px;
+	text-decoration: none;
+	}
+nav ul ul li {
+	float: none;
+	border-top: 1px solid #C90300;
+	border-bottom: 1px solid #C90300;
+	position: relative;
+	}
+nav ul ul li a {
+	padding: 10px 20px;
+	color: #FFF8F8;
+        text-align: center;
+	}
+nav ul ul li a:hover {
+	background: #C90300;
+	}
+body.home  nav ul li a.home, body.about  ul li a.about, body.disasters  nav ul li a.disasters, body.planning  nav ul li a.planning, body.shopping  nav ul li a.shopping, body.faq  nav ul li a.faq,  body.contact  ul li a.contact {
+	background: #C90300;
+	}
+body.fdisasters  nav ul ul li a.fdisasters, body.earthquakes  nav ul ul li a.earthquakes , body.tornadoes  nav ul ul li a.tornadoes, body.floods  nav ul ul li a.floods, body.wildfires  nav ul ul li a.wildfires, body.tsunamis  nav ul ul li a.tsunamis, body.landslides  nav ul ul li a.landslides, body.hurricanes  nav ul ul li a.hurricanes, body.volcanoes  nav ul ul li a.volcanoes, body.evacuation  nav ul ul li a.evacuation, body.communication  nav ul ul li a.communication, body.stay  nav ul ul li a.stay, body.items  nav ul ul li a.items, body.alert  nav ul ul li a.alert, body.unsafe  nav ul ul li a.unsafe, body.kits  nav ul ul li a.kits, body.ditems  nav ul ul li a.ditems {
+	background: #C90300;
+}
+
+/*Internal and External Links*/
+li.link a:link {
+    color:#D3D643;
+    background-color:transparent;
+    font-family:Arial;
+    font-size:1.12em;;
+    text-decoration:underline;
+}
+li.link a:visited {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:none;
+}
+li.link a:hover {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+li.link a:active {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+p.link a:link {
+    color:#D3D643;
+    background-color:transparent;
+    font-family:Arial;
+    font-size:1.12em;;
+    text-decoration:underline;
+}
+p.link a:visited {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:none;
+}
+p.link a:hover {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+p.link a:active {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+/*Footer Styling*/
+footer ul li{
+	color:#fff8f8;
+        display: inline-block;
+        padding: 0 10px;
+        font-family:Arial;
+        font-size:14px;
+        list-style-type: none;
+	}
+footer a:link {
+    color:#D3D643;
+    background-color:transparent;
+    font-family:Arial;
+    font-size:14px;
+    text-decoration:underline;
+}
+footer a:visited {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:none;
+}
+footer a:hover {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+footer a:active {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+/*Link styling for Exercise Page*/
+ul.ex a:link {
+    color:#D3D643;
+    background-color:transparent;
+    text-decoration:underline;
+}
+ul.ex li a:visited {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:none;
+}
+ul.ex li a:hover {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+/*Footer Styling*/
+footer ul li{
+	color:#fff8f8;
+        display: inline-block;
+        padding: 0px 10px;
+        font-family:Arial;
+        font-size:18px;
+        list-style-type: none;
+	}
+footer a:link {
+    color:#D3D643;
+    background-color:transparent;
+    font-family:Arial;
+    font-size:18px;
+    text-decoration:underline;
+}
+footer a:visited {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:none;
+}
+footer a:hover {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+footer a:active {
+    color:#c90300;
+    background-color:transparent;
+    text-decoration:underline;
+}
+
+
+/* Responsive Layouts */
+
+/* Medium Screens */
+@media screen and (min-width: 30em) {
+
+  main h1{
+      margin-top: 0;
+  }
+}
+
+/*Large Screens*/
+@media screen and (min-width: 50em) {
+
+  input {
+    font-size: 1vw;
+  }
+  .button {
+    display: inline-block;
+    font-size: 1.2vw;
+    color: #C90300;
+    padding: .5em 2em;
+    background-color: black;
+    border-radius: .3em;
+  }
+}
